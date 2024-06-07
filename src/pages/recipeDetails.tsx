@@ -15,11 +15,12 @@ const RecipeDetails = () => {
   const state = useAppSelector((state) => state.recipe);
   const dispatch = useAppDispatch();
   const [recipe, setRecipe] = useState<RecipeDetailsInterface | undefined>();
+  const apiKey = import.meta.env.VITE_API_KEY;
 
   // Retrieve recipe
   useEffect(() => {
     dispatch(
-      getData(`/${recipeID}/information?apiKey=${import.meta.env.VITE_API_KEY}`)
+      getData(`/${recipeID}/information?apiKey=${apiKey}`)
     ).then((response) => setRecipe(response.payload));
   }, []);
 
