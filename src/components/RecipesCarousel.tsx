@@ -81,7 +81,6 @@ function RecipesCarousel() {
         >
           {recipes.data.map(
             (recipe: Recipe) => (
-              console.log(recipe),
               (
                 <CarouselItem key={recipe.id} className="p-0 mx-auto">
                   <RecipeCard recipe={recipe} />

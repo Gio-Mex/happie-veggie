@@ -5,8 +5,6 @@ import { RouterProvider } from "react-router-dom";
 import router from "./routes/routes.tsx";
 import { Provider } from "react-redux";
 import { store } from "./redux/store.ts";
-import.meta.env.VITE_API_KEY
-console.log(import.meta.env);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

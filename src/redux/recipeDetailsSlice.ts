@@ -15,7 +15,6 @@ export const getData = createAsyncThunk(
       const response = await axios.get(
         `https://api.spoonacular.com/recipes${endpoint}`
       );
-      console.log(response.data);
       return response.data;
     } catch (error) {
       console.log(error);
@@ -34,7 +33,6 @@ const recipeSlice = createSlice({
     builder.addCase(getData.fulfilled, (state, action) => {
       state.loading = false;
       state.data = action.payload;
-      console.log("payload", action.payload);
     });
     builder.addCase(getData.rejected, (state, action) => {
       state.loading = false;

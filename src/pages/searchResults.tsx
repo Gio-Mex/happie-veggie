@@ -86,7 +86,6 @@ function SearchResults() {
           {gallery
             .map(
               (recipe: Recipe) => (
-                console.log(recipe),
                 (
                   <div key={recipe.id}>
                     <RecipeCard recipe={recipe} />
