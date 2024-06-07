@@ -8,7 +8,7 @@ This app, powered by [Spoonicular](https://spoonacular.com/food-api), allows you
 
 _Note: according to Spoonicular's conditions, free use includes a limited number of searches per day._
 
-![Screenshot of post-list](src/assets/img/home-img.jpeg)
+![Screenshot of post-list](src/assets/img/home-img.png)
 
 ## Installation
 
@@ -31,10 +31,10 @@ Now run `ng serve` for a dev server. Navigate to http://localhost:5173/
 ## Usage 
 Home page displays random recipes that you can select for details. 
 
-![Screenshot of post-list](src/assets/img/details-img.jpeg)
+![Screenshot of post-list](src/assets/img/details-img.png)
 
 If you are looking for a particular recipe, simply search for it via the searchbar. The app will find up to 100 relevant recipes.
 
-![Screenshot of post-list](src/assets/img/gallery-img.jpeg)
+![Screenshot of post-list](src/assets/img/gallery-img.png)
 
 You can also see the code in full [here](https://happie-veggie.netlify.app).
