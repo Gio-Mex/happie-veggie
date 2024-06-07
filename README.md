@@ -37,4 +37,4 @@ If you are looking for a particular recipe, simply search for it via the searchb
 
 ![Screenshot of post-list](public/img/gallery-img.png)
 
-You can also see the code in full [here](https://happie-veggie.netlify.app).
+Try the app [here](https://happie-veggie.netlify.app).
