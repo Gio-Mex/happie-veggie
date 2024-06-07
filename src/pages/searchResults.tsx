@@ -69,6 +69,7 @@ function SearchResults() {
   const handlePageChange = (firstItem: number) => {
     setFirstItem(firstItem);
     setLastItem(firstItem + 12);
+    setCurrentPage(firstItem / 12 + 1);
   };
 
   // Gallery body
