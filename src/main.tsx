@@ -5,6 +5,8 @@ import { RouterProvider } from "react-router-dom";
 import router from "./routes/routes.tsx";
 import { Provider } from "react-redux";
 import { store } from "./redux/store.ts";
+import dotenv from 'dotenv';
+dotenv.config();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
