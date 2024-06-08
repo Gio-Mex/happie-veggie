@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { getData } from "@/redux/recipesSlice";
 import { useAppDispatch } from "@/redux/store";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const apiKey = import.meta.env.VITE_API_KEY;
 const searchUrl = `/complexSearch?apiKey=${apiKey}&number=100&diet=vegetarian`;
@@ -11,6 +11,7 @@ const searchUrl = `/complexSearch?apiKey=${apiKey}&number=100&diet=vegetarian`;
 function SearchBar() {
   const [filterInput, setFilterInput] = useState("");
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const handleSearch = async () => {
     try {
@@ -27,7 +28,7 @@ function SearchBar() {
     if (event.key === "Enter") {
       event.preventDefault();
       handleSearch();
-    }
+      navigate("/recipes");}
   };
 
   return (
