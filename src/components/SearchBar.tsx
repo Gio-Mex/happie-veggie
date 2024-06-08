@@ -23,6 +23,13 @@ function SearchBar() {
     }
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleSearch();
+    }
+  };
+
   return (
     <div className="w-11/12 flex flex-row justify-center items-center md:mt-16">
       <Input
@@ -34,6 +41,7 @@ function SearchBar() {
           e.preventDefault();
           setFilterInput(e.target.value);
         }}
+        onKeyDown={handleKeyDown}
       />
       <Link to="/recipes" onClick={() => handleSearch()}>
         <Button
