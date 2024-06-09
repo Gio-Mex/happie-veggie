@@ -8,7 +8,7 @@ function ErrorComponent() {
         Oops! Something went wrong 🫣 please try leater...
       </p>
       <p className="text-lg text-green-600">
-        Note: This app uses Spoonicular's APIs, which offers limited free daily
+        Note: This app uses Spoonacular's APIs, which offers limited free daily
         usage. If you are stucked here, probably you have exceeded the daily
         limit. Please come back tomorrow, thank you 👋
       </p>

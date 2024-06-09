@@ -4,12 +4,12 @@
 
 ## Description
 
-This app, powered by [Spoonicular](https://spoonacular.com/food-api), allows you
+This app, powered by [Spoonacular](https://spoonacular.com/food-api), allows you
  to search for vegetarian recipes (up to 100 per search) and consult their details.
   The app was developed with React and Typescript, while for styling the use of
    Shadcn together with Tailwind was tested.
 
-_Note: according to Spoonicular's conditions, free use includes a limited number
+_Note: according to Spoonacular's conditions, free use includes a limited number
  of searches per day._
 
 ![Screenshot of post-list](public/img/home-img.png)
@@ -49,7 +49,7 @@ If you are looking for a particular recipe, simply search for it via the
 - Search among thousands of vegetarian recipes
 - See the details, including ingredients, equipment, and individual steps.
 - Responsive design
-- Powered by Spoonicular
+- Powered by Spoonacular
 
 ## Demo
 Try the app [here](https://happie-veggie.netlify.app).
